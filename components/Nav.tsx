@@ -12,11 +12,11 @@ export default function Nav() {
                     <Image height={40} src={logo} alt="VJXSOFT" />
                 </Link>
                 <div>
-                    <ul className="menu menu-horizontal rounded-box pr-0 hidden lg:flex">
+                    <ul className="menu menu-horizontal pr-0 hidden lg:flex">
                         <li>
                             <details>
                                 <summary className="text-sm text-zinc-300">Blogi</summary>
-                                <ul className=" min-w-56">
+                                <ul className=" min-w-56 rounded-md">
                                     <li className=" text-zinc-800">
                                         <Link href="/about">Pienyrittäjän SEO opas</Link>
                                     </li>
