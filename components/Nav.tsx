@@ -27,13 +27,13 @@ export default function Nav() {
                             </details>
                         </li>
                         <li className="text-sm h-10 flex items-center text-zinc-300">
-                            <Link href="/about">Palvelut</Link>
+                            <Link href="/palvelut">Palvelut</Link>
                         </li>
                         <li className="text-sm h-10 flex items-center text-zinc-300">
                             <Link href="/hinnasto">Hinnasto</Link>
                         </li>
                         <li className="text-sm h-10 flex items-center text-zinc-300">
-                            <Link className="pr-0" href="/about">Ota yhteyttä</Link>
+                            <Link className="pr-0" href="/otayhteytta">Ota yhteyttä</Link>
                         </li>
                     </ul>
                     <div className="dropdown dropdown-end">
@@ -53,13 +53,13 @@ export default function Nav() {
                                 </ul>
                             </li>
                             <li>
-                                <Link href="/hinnasto">Palvelut</Link>
+                                <Link href="/palvelut">Palvelut</Link>
                             </li>
                             <li>
                                 <Link href="/hinnasto">Hinnasto</Link>
                             </li>
                             <li>
-                                <Link href="/hinnasto">Ota yhteyttä</Link>
+                                <Link href="/otayhteytta">Ota yhteyttä</Link>
                             </li>
                         </ul>
                     </div>
