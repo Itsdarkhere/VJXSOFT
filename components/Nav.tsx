@@ -6,7 +6,7 @@ import logo from '../public/VJXSOFT.png'
 export default function Nav() {
 
     return (
-        <header className=" w-full bg-black border-b border-b-zinc-800 sticky flex justify-center items-center top-0 py-6 px-4">
+        <header className=" w-full z-10 bg-black border-b border-b-zinc-800 sticky flex justify-center items-center top-0 py-4 px-4">
             <nav className=" max-w-7xl flex flex-row justify-between items-center w-full">
                 <Link href="/">
                     <Image height={40} src={logo} alt="VJXSOFT" />
