@@ -31,9 +31,9 @@ export default function Home() {
   ]
 
   return (
-    <main className="flex min-h-screen flex-col items-center py-24">
-      <section className="lg:px-6 w-full flex justify-center mb-24">
-        <div className="w-full py-10 flex flex-col lg:flex-row justify-between max-w-7xl lg:bg-white lg:rounded-lg px-6">
+    <main className="flex min-h-screen flex-col items-center">
+      <section className="lg:px-6 w-full flex justify-center my-24">
+        <div className="w-full lg:py-10 flex flex-col lg:flex-row justify-between max-w-7xl lg:bg-white lg:rounded-lg px-6">
           <div className="flex flex-col gap-2 justify-center items-start max-w-3xl">
             <h3 className=" text-4xl font-bold tracking-tight text-gray-100 lg:text-gray-900 sm:text-6xl">Hoidetaanko yrityksesi digitaalinen läsnäolo kuntoon?</h3>
             <h6 className=" mt-4 text-xl text-gray-300 lg:text-gray-500">Löydä asiakkaasi siellä, missä he ovat – hyödynnä dataohjautuvaa markkinointia ja innovatiivisia digistrategioita, jotka vievät yrityksesi seuraavalle tasolle.</h6>
@@ -75,8 +75,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full flex bg-white flex-row justify-center lg:p-6">
-        <div className="w-full max-w-7xl bg-black lg:rounded-lg p-6 py-16 flex flex-col gap-8 lg:flex-row justify-between items-start">
+      <section className="w-full flex bg-white flex-row justify-center lg:px-6">
+        <div className="w-full max-w-7xl bg-black lg:rounded-lg px-6 py-24 flex flex-col gap-8 lg:flex-row justify-between items-start">
           <div className="w-full max-w-xl flex flex-col">
             <h4 className=" text-3xl font-bold tracking-tight text-white sm:text-4xl">Ota yhteyttä</h4>
             <p className=" mt-6 text-lg leading-8 text-gray-300">Varaa täysin veloitukseton strategiapuhelu oheisella lomakkeella. Täytäthän tiedot mahdollisimman tarkasti, sillä perehdymme yrityksesi tilanteeseen perinpohjaisesti.</p>
@@ -115,8 +115,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pt-10 w-full bg-white flex justify-center p-6">
-        <div className="w-full max-w-7xl py-20 flex flex-col gap-8">
+      <section className="w-full bg-white flex justify-center px-6">
+        <div className="w-full max-w-7xl py-24 flex flex-col gap-8">
           <h5 className=" font-bold text-2xl text-indigo-400 leading-tight">Miksi VJXSOFT?</h5>
           <h6 className=" text-zinc-600 leading-snug text-3xl">
             VJXSOFT tarjoaa kaiken osaamisen mitä pienyritys kaipaa digitaalisessa markkinoinnissa. 
@@ -125,8 +125,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-10 w-full flex justify-center p-6">
-        <div className="w-full max-w-7xl py-20 flex flex-col gap-8">
+      <section className=" w-full flex justify-center px-6">
+        <div className="w-full max-w-7xl py-24 flex flex-col gap-8">
           <h4 className=" text-4xl font-semibold">Viimeaikaiset blogit</h4>
           <div className="w-full flex flex-row justify-start gap-6 flex-wrap">
             <div className="card w-96 bg-base-100 shadow-xl text-zinc-950">
