@@ -76,10 +76,10 @@ export default function Home() {
       </section>
 
       <section className="w-full flex bg-white flex-row justify-center p-6">
-        <div className="w-full max-w-7xl bg-black rounded-lg p-10 py-10 flex flex-col gap-8 lg:flex-row justify-between items-start">
-          <div className="w-full max-w-xl flex flex-col gap-4">
-            <h4 className=" text-4xl font-semibold">Ota yhteyttä</h4>
-            <p className=" text-zinc-400">Varaa täysin veloitukseton strategiapuhelu oheisella lomakkeella. Täytäthän tiedot mahdollisimman tarkasti, sillä perehdymme yrityksesi tilanteeseen perinpohjaisesti.</p>
+        <div className="w-full max-w-7xl bg-black rounded-lg p-6 py-16 flex flex-col gap-8 lg:flex-row justify-between items-start">
+          <div className="w-full max-w-xl flex flex-col">
+            <h4 className=" text-3xl font-bold tracking-tight text-white sm:text-4xl">Ota yhteyttä</h4>
+            <p className=" mt-6 text-lg leading-8 text-gray-300">Varaa täysin veloitukseton strategiapuhelu oheisella lomakkeella. Täytäthän tiedot mahdollisimman tarkasti, sillä perehdymme yrityksesi tilanteeseen perinpohjaisesti.</p>
           </div>
           <form className=" p-8 w-full max-w-xl flex flex-col rounded-lg bg-white shadow-md">
 
