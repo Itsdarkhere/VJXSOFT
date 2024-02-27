@@ -14,23 +14,39 @@ export default function Home() {
       </section>
 
       <section className="w-full mt-10 flex flex-row justify-center">
-        <div className="w-full max-w-7xl py-20 flex flex-row justify-between items-center">
+        <div className="w-full max-w-7xl py-20 flex flex-row justify-between items-start">
           <div className="w-full max-w-xl flex flex-col gap-4">
             <h4 className=" text-4xl font-semibold">Ota yhteyttä</h4>
             <p className=" text-zinc-400">Varaa täysin veloitukseton strategiapuhelu oheisella lomakkeella. Täytäthän tiedot mahdollisimman tarkasti, sillä perehdymme yrityksesi tilanteeseen perinpohjaisesti.</p>
           </div>
           <form className=" p-8 w-full max-w-xl flex flex-col rounded-lg bg-white shadow-md">
-            <label className="form-control w-full max-w-xs">
+
+            <label className="form-control w-full">
               <div className="label">
                 <span className="label-text">Sähköposti</span>
               </div>
               <input type="email" name="email" placeholder="Sähköposti" className="input input-bordered w-full max-w-xs" />
             </label>
-            <label className="form-control">
+
+            {/* <label className="form-control w-full mt-5">
+              <div className="label">
+                <span className="label-text">Palvelu</span>
+              </div>
+              <select className="select text-black placeholder:text-zinc-300 select-bordered">
+                <option disabled selected>Pick one</option>
+                <option>Star Wars</option>
+                <option>Harry Potter</option>
+                <option>Lord of the Rings</option>
+                <option>Planet of the Apes</option>
+                <option>Star Trek</option>
+              </select>
+            </label> */}
+
+            <label className="form-control mt-5">
               <div className="label">
                 <span className="label-text">Viesti</span>
               </div>
-              <textarea className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
+              <textarea className="textarea textarea-bordered text-black h-24" placeholder="Bio"></textarea>
             </label>
             <button className=" mt-6 btn btn-primary">Neutral</button>
           </form>
