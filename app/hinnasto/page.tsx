@@ -6,9 +6,9 @@ export default function Hinnasto() {
         <div className="flex min-h-screen flex-col items-center">
             <section className=" w-full lg:px-6 flex justify-center lg:py-24">
                 <div className="max-w-7xl w-full py-24 px-6 bg-white lg:rounded-lg flex flex-col justify-center items-center">
-                    <div className="w-full max-w-md">
-                        <h1 className="text-4xl text-zinc-950 font-bold text-center">Hinnasto</h1>
-                        <p className="text-center text-zinc-600 mt-2">Markkinoiden parhaat hinnat kehtaa näyttää julkisesti</p>
+                    <div className="w-full max-w-md text-start lg:text-center">
+                        <h1 className="text-4xl text-zinc-950 font-bold">Hinnasto</h1>
+                        <p className="text-zinc-600 mt-2">Markkinoiden parhaat hinnat kehtaa näyttää julkisesti</p>
                     </div>
                     <div className="flex flex-col lg:flex-row items-center justify-center mt-12 gap-10 w-full">
                         <PriceCard title="Pienyritys" price={300} />
