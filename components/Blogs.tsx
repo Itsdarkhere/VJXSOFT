@@ -38,7 +38,7 @@ export default function Blogs() {
           },
         },
         {
-          id: 2,
+          id: 3,
           title: 'Boost your conversion rate',
           href: '#',
           description:
