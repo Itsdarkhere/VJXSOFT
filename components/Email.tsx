@@ -3,8 +3,8 @@ import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 export default function Email() {
 
     return (
-        <section className="w-full pb-24 bg-white flex justify-center">
-            <div className="relative isolate w-full max-w-7xl rounded-3xl overflow-hidden bg-gray-900">
+        <section className="w-full lg:pb-24 bg-white flex justify-center">
+            <div className="relative isolate w-full max-w-7xl lg:rounded-3xl overflow-hidden bg-gray-900">
             <div className="mx-auto px-6 lg:px-8 rounded-3xl py-16 sm:py-24 lg:py-32">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
