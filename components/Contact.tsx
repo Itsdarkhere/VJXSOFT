@@ -3,7 +3,7 @@ import { ClockIcon, DocumentCheckIcon } from '@heroicons/react/16/solid'
 export default function Contact() {
 
     return (
-        <section className="w-full border-t border-b flex bg-black flex-row justify-center lg:px-6">
+        <section className="w-full flex bg-black flex-row justify-center lg:px-6">
             <div className="w-full max-w-7xl lg:rounded-3xl p-6 py-24 flex flex-col gap-8 lg:flex-row justify-between items-start">
                 <div className="w-full max-w-xl flex flex-col">
                     <p className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Ota Yhteyttä</p>

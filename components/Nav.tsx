@@ -29,9 +29,9 @@ export default function Nav() {
                         <li className="text-sm h-10 flex items-center text-zinc-300">
                             <Link href="/palvelut">Palvelut</Link>
                         </li>
-                        <li className="text-sm h-10 flex items-center text-zinc-300">
+                        {/* <li className="text-sm h-10 flex items-center text-zinc-300">
                             <Link href="/hinnasto">Hinnasto</Link>
-                        </li>
+                        </li> */}
                         <li className="text-sm h-10 flex items-center text-zinc-300">
                             <Link className="pr-0" href="/otayhteytta">Ota yhteyttä</Link>
                         </li>
@@ -55,9 +55,9 @@ export default function Nav() {
                             <li>
                                 <Link href="/palvelut">Palvelut</Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href="/hinnasto">Hinnasto</Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link href="/otayhteytta">Ota yhteyttä</Link>
                             </li>
