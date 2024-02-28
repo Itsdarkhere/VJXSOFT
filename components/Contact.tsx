@@ -23,7 +23,7 @@ export default function Contact() {
                         </p>
                     </div>
                 </div>
-                <form className=" p-8 w-full border max-w-xl flex flex-col rounded-lg bg-base-100 shadow-md">
+                <form className=" p-4 lg:p-8 w-full border max-w-xl flex flex-col rounded-lg bg-base-100 shadow-md">
                     <label className=" form-control w-full">
                     <div className="label">
                         <span className="label-text">Sähköposti</span>
