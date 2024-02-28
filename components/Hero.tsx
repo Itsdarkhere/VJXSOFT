@@ -4,7 +4,7 @@ import sss from '../public/sss.svg';
 export default function Hero() {
 
     return (
-        <section className="lg:px-6 w-full flex justify-center my-24">
+        <section className="lg:px-6 w-full flex justify-center my-12">
             <div className="w-full lg:py-10 flex flex-col lg:flex-row justify-between max-w-7xl lg:bg-white lg:rounded-3xl px-6">
                 <div className="flex flex-col gap-2 justify-center items-start max-w-3xl">
                     <h3 className=" text-4xl font-bold tracking-tight text-gray-100 lg:text-gray-900 sm:text-6xl">Hoidetaanko yrityksesi digitaalinen läsnäolo kuntoon?</h3>
