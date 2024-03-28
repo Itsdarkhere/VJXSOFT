@@ -22,7 +22,7 @@ export default function Palvelut() {
                     </div>
                 </div>
                 <div className="container grid items-start gap-4 px-4 md:gap-8 md:px-6 lg:gap-12">
-                    <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 lg:gap-8">
+                    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
                         <div className="flex flex-col gap-1.5 bg-zinc-200 p-4 rounded-md">
                         <h3 className="text-2xl font-bold text-gray-900">SEO-strategia</h3>
                             <p className="mt-2 text-base leading-7 text-gray-600">
