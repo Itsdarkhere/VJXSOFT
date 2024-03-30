@@ -40,7 +40,7 @@ export default async function Blogi(props: BlogPageProps) {
     const { title, date, content } = article.fields;
     return (
         <div className="min-h-screen p-6 lg:py-24 flex flex-col justify-center items-center">
-            <div className="max-w-7xl">
+            <div className="max-w-3xl">
                 <div className="max-w-2xl">
                     <h1 className="font-extrabold text-3xl mb-2">{title}</h1>
                     <p className="mb-6 text-slate-400 ">
