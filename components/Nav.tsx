@@ -1,10 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from '../public/VJXSOFT.png'
+import { createClient } from "contentful";
 
+const client = createClient({
+    space: process.env.CONTENFUL_SPACE_ID!,
+    accessToken: process.env.CONTENT_DELIVERY_API!,
+});
+  
+const getBlogEntries = async () => {
+  const entries = (await client.getEntries({ content_type: "blog" }));
+  return entries;
+};
 
-export default function Nav() {
-
+export default async function Nav() {
+    const entries = await getBlogEntries();
     return (
         <header className=" w-full z-40 bg-black border-b border-b-zinc-800 sticky flex justify-center items-center top-0 py-4 px-4">
             <nav className=" max-w-7xl flex flex-row justify-between items-center w-full">
@@ -17,12 +27,14 @@ export default function Nav() {
                             <details>
                                 <summary className="text-sm text-zinc-300">Blogi</summary>
                                 <ul className=" min-w-56 rounded-md">
-                                    <li className=" text-zinc-800">
-                                        <Link href="/about">Pienyrittäjän SEO opas</Link>
-                                    </li>
-                                    <li className=" text-zinc-800">
-                                        <Link href="/about">Paikallinen SEO</Link>
-                                    </li>
+                                    {entries.items.map((post: any, i: number) => {
+                                        const { slug, title, date } = post.fields;
+                                        return (
+                                            <li key={slug} className=" text-zinc-800">
+                                                <Link href={`/blogi/${slug}`}>{title}</Link>
+                                            </li>
+                                        )
+                                    })}
                                 </ul>
                             </details>
                         </li>

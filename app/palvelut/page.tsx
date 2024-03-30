@@ -12,9 +12,9 @@ export default function Palvelut() {
 
     return (
         <div className=" w-full bg-gray-50 flex flex-col justify-center items-center">
-            <div className="relative max-w-7xl py-10 gap-10 lg:py-16 flex justify-center items-center flex-col">
-                <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-                    <div className="space-y-4 lg:space-y-2">
+            <div className="relative max-w-7xl gap-10 p-6 py-24 flex justify-center items-center flex-col">
+                <div className="flex flex-col justify-center items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+                    <div className="space-y-4 max-w-xl lg:space-y-2 text-start md:text-center">
                         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Palvelumme</h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
                             Anna meidän auttaa sinua parantamaan hakukoneiden sijoituksiasi ja ohjaamaan liikennettä verkkosivustollesi.

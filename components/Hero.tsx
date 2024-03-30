@@ -6,7 +6,7 @@ export default function Hero() {
 
     return (
         <section className="px-2 lg:px-6 w-full flex justify-center my-6 lg:my-24">
-            <div className="w-full py-10 flex flex-col lg:flex-row justify-between max-w-7xl bg-white rounded-lg lg:rounded-3xl px-6">
+            <div className="w-full py-10 px-6 flex flex-col lg:flex-row justify-between max-w-7xl bg-white rounded-lg lg:rounded-3xl">
                 <div className="flex flex-col gap-2 justify-center items-start max-w-3xl">
                     <h3 className=" text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Hoidetaanko yrityksesi digitaalinen läsnäolo kuntoon?</h3>
                     <h6 className=" mt-4 text-xl text-gray-500">Löydä asiakkaasi siellä, missä he ovat – hyödynnä dataohjautuvaa markkinointia ja innovatiivisia digistrategioita, jotka vievät yrityksesi seuraavalle tasolle.</h6>
