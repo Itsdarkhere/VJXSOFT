@@ -1,24 +1,29 @@
+import { BorderAllIcon, ImageIcon, MagnifyingGlassIcon, TransformIcon, UpdateIcon } from "@radix-ui/react-icons";
 
 export default function Process() {
 
     const features = [
         {
           name: 'Avainsanojen Tutkimus',
+          icon: <MagnifyingGlassIcon className=" w-6 h-6 text-white" />,
           description:
             'Syvällinen analyysi tunnistaakseen korkean suorituskyvyn avainsanat, jotka on räätälöity kohdeyleisöllesi ja alallesi, varmistaen sisältösi paremman sijoittumisen hakutuloksissa.',
         },
         {
           name: 'Sivukohtainen Optimointi',
+          icon: <BorderAllIcon className=" w-6 h-6 text-white" />,
           description:
             'Yksittäisten verkkosivujen optimointi saavuttaakseen korkeammat sijoitukset ja houkutellakseen merkityksellisempää liikennettä, keskittyen sisällön laatuun, HTML-tageihin ja URL-rakenteeseen.',
         },
         {
           name: 'Sisällöntuotanto',
+          icon: <ImageIcon className=" w-6 h-6 text-white" />,
           description:
             'Koukuttavan, SEO-ystävällisen sisällön kehittäminen, joka houkuttelee liikennettä ja vahvistaa brändiäsi alan auktoriteettina.',
         },
         {
           name: 'Takaisinlinkkien Strategiat',
+          icon: <UpdateIcon className=" w-6 h-6 text-white" />,
           description:
             'Vahvan takaisinlinkkiprofiilin rakentaminen korkealaatuisilla linkeillä parantamaan verkkosivustosi auktoriteettia ja hakukoneiden sijoituksia.',
         },
@@ -43,7 +48,7 @@ export default function Process() {
                         <div key={feature.name} className="relative pl-16">
                             <dt className="text-base font-semibold leading-7 text-gray-900">
                             <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                                {/* <feature.icon className="h-6 w-6 text-white" aria-hidden="true" /> */}
+                                {feature.icon}
                             </div>
                             {feature.name}
                             </dt>
