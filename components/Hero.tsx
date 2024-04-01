@@ -5,7 +5,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 export default function Hero() {
 
     return (
-        <section className="px-2 lg:px-6 w-full flex justify-center my-6 lg:my-24">
+        <section className="lg:px-6 w-full flex justify-center my-6 lg:my-24">
             <div className="w-full py-10 px-6 flex flex-col lg:flex-row justify-between max-w-7xl bg-black lg:bg-white rounded-lg lg:rounded-3xl">
                 <div className="flex flex-col gap-2 justify-center items-start max-w-3xl">
                     <h3 className=" font-extrabold text-3xl text-white lg:text-gray-900 sm:text-6xl">Hoidetaanko yrityksesi digitaalinen läsnäolo kuntoon?</h3>
