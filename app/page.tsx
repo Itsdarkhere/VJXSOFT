@@ -3,6 +3,7 @@ import Blogs from "@/components/Blogs";
 import Contact from "@/components/Contact";
 import Process from "@/components/Process";
 import Hero from "@/components/Hero";
+import CookieModal from "@/components/CookieModal";
 
 export default function Home() {
 
@@ -13,7 +14,7 @@ export default function Home() {
       <Process />
 
       <Contact />
-
+      <CookieModal />
       <Blogs />
 
       <Email />

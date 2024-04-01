@@ -1,45 +1,38 @@
 'use client'
-
-import { useEffect } from "react"
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger
+} from "@/components/ui/alert-dialog"
+import { useLayoutEffect, useState } from "react"
 
 export default function CookieModal() {
-    
-    useEffect(() => {
-        let target = document.getElementById('my_modal_1') as HTMLDialogElement;
-        if (target) target.showModal();
-    }, [])
-
-    const accept = () => {
-
-        closeDialog();
-    }
-
-    const deny = () => {
-
-
-        closeDialog();
-    }
-
-    const closeDialog = () => {
-        let target = document.getElementById('my_modal_1') as HTMLDialogElement;
-        if (target) target.close();
-    }
-
+    const [open, setOpen] = useState(false);
+    useLayoutEffect(() => {
+        setOpen(true)
+    }, []) 
+     
     return (
-        <dialog id="my_modal_1" className="modal">
-            <div className="modal-box">
-                <h3 className="font-bold text-lg text-zinc-700">Evästeiden käyttö</h3>
-                <p className="py-4 text-zinc-500">
-                    Käytämme sivustollamme evästeitä parantaaksemme käyttökokemustasi. 
-                    Evästeet auttavat meitä analysoimaan sivuston käyttöä ja kohdentamaan mainontaa. 
-                </p>
-                <div className="modal-action">
-                <div className=" flex flex-row gap-2">
-                    <button onClick={deny} className="btn ">Hylkää</button>
-                    <button onClick={accept} className="btn btn-primary">Hyväksy</button>
-                </div>
-                </div>
-            </div>
-        </dialog>
+        <AlertDialog open={open} onOpenChange={setOpen}>
+            <AlertDialogContent>
+                <AlertDialogHeader>
+                    <AlertDialogTitle>Evästeiden käyttö</AlertDialogTitle>
+                    <AlertDialogDescription>
+                        Käytämme sivustollamme evästeitä parantaaksemme käyttökokemustasi. 
+                        Evästeet auttavat meitä analysoimaan sivuston käyttöä ja kohdentamaan mainontaa. 
+                    </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                    <AlertDialogCancel>Hylkää</AlertDialogCancel>
+                    <AlertDialogAction>Hyväksy</AlertDialogAction>
+                </AlertDialogFooter>
+            </AlertDialogContent>
+        </AlertDialog>
     )
 }

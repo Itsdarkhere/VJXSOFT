@@ -21,7 +21,6 @@ export default function RootLayout({
     <html lang="en" data-theme="light">
       <body className={inter.className}>
         <Nav />
-        <CookieModal />
         {children}
         <Footer />
       </body>
