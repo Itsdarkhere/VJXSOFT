@@ -1,6 +1,9 @@
+import Otayhteytta from "@/app/otayhteytta/page";
+import Contact from "@/components/Contact";
 import { BlogItem } from "@/types";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { createClient } from "contentful";
+import Link from "next/link";
 
 const client = createClient({
     space: process.env.CONTENFUL_SPACE_ID!,
@@ -39,7 +42,7 @@ export default async function Blogi(props: BlogPageProps) {
     const article = await fetchBlogPost(slug);
     const { title, date, content } = article.fields;
     return (
-        <div className="min-h-screen p-6 lg:py-24 flex flex-col justify-center items-center">
+        <div className="min-h-screen w-full p-6 lg:py-24 flex flex-col justify-center items-center">
             <div className="max-w-3xl text-white">
                 <div className="max-w-2xl">
                     <h1 className="font-extrabold text-3xl mb-2">{title}</h1>
@@ -56,6 +59,24 @@ export default async function Blogi(props: BlogPageProps) {
                     { documentToReactComponents(content) }
                 </div>
             </div>
+            <section className="w-full py-6 lg:mt-16 max-w-3xl bg-gray-200 rounded-3xl md:py-12">
+                <div className="container flex flex-col items-center gap-4 px-4 md:px-6">
+                    <div className="space-y-2 text-center">
+                        <h3 className="text-2xl font-bold tracking-tighter md:text-3xl/tight">Optimoidaan sinunkin sivusi?</h3>
+                        <p className="text-gray-500 dark:text-gray-400">
+                            Ota yhteyttä niin tehdään sinunkin yrityksestäsi netissä näkyvä!
+                        </p>
+                    </div>
+                    <div>
+                        <Link
+                            className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                            href="/otayhteytta"
+                        >
+                            Ota yhteyttä
+                        </Link>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
