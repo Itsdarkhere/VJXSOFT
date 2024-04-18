@@ -4,6 +4,7 @@ import { BlogItem } from "@/types";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { createClient } from "contentful";
 import Link from "next/link";
+import { BLOCKS } from '@contentful/rich-text-types';
 
 const client = createClient({
     space: process.env.CONTENFUL_SPACE_ID!,
@@ -36,6 +37,17 @@ const fetchBlogPost = async (slug: string): Promise<any> => {
     return queryResult.items[0]
 }
 
+const options = {
+    renderNode: {
+        [BLOCKS.HEADING_1]: (_: any, children: any) => <h1 className=''>{children}</h1>,
+        [BLOCKS.HEADING_2]: (_: any, children: any) => <h2 className=''>{children}</h2>,
+        [BLOCKS.HEADING_3]: (_: any, children: any) => <h3 className=' font-extrabold text-zinc-300 text-2xl mb-2 mt-10'>{children}</h3>,
+        [BLOCKS.HEADING_4]: (_: any, children: any) => <h4 className=''>{children}</h4>,
+        [BLOCKS.HEADING_5]: (_: any, children: any) => <h5 className=''>{children}</h5>,
+        [BLOCKS.HEADING_6]: (_: any, children: any) => <h6 className=''>{children}</h6>,
+    },
+};
+
 export default async function Blogi(props: BlogPageProps) {
     const { params } = props;
     const { slug } = params;
@@ -56,7 +68,7 @@ export default async function Blogi(props: BlogPageProps) {
                     </p>
                 </div>
                 <div className="[&>p]:mb-8 [&>h2]:font-extrabold">
-                    { documentToReactComponents(content) }
+                    { documentToReactComponents(content, options) }
                 </div>
             </div>
             <section className="w-full py-6 lg:mt-16 max-w-3xl bg-gray-200 rounded-3xl md:py-12">
