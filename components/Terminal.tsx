@@ -76,7 +76,7 @@ export default function Terminal() {
           </p>
 
           <div className="mt-4">
-            <p className="t-yellow font-bold">SPOLINGO <span className="t-dim font-normal">// Nov 2025 - Present</span></p>
+            <p className="t-yellow font-bold">SPOLINGO <span className="t-dim font-normal">— Nov 2025 - Present</span></p>
             <div className="mt-1 pl-4 border-l-2 border-[#3c3c3c]">
               <p>Building a new app focused on language learning</p>
               <p>through AI conversation practice.</p>
@@ -87,14 +87,14 @@ export default function Terminal() {
           </div>
 
           <div className="mt-4">
-            <p className="t-yellow font-bold">WINGED <span className="t-dim font-normal">// Nov 2025 - Present</span></p>
+            <p className="t-yellow font-bold">WINGED <span className="t-dim font-normal">— Nov 2025 - Present</span></p>
             <div className="mt-1 pl-4 border-l-2 border-[#3c3c3c]">
               <p>Contracting at a friend&apos;s startup, building their iOS app.</p>
             </div>
           </div>
 
           <div className="mt-4">
-            <p className="t-yellow font-bold">BLOCKTICKETS <span className="t-dim font-normal">// Nov 2022 - Nov 2025</span></p>
+            <p className="t-yellow font-bold">BLOCKTICKETS <span className="t-dim font-normal">— Nov 2022 - Nov 2025</span></p>
             <div className="mt-1 pl-4 border-l-2 border-[#3c3c3c]">
               <p>Created an event creation flow inspired by and rivaling</p>
               <p>Ticketmaster&apos;s. Built multiple interactive seatmap systems</p>
@@ -105,7 +105,7 @@ export default function Terminal() {
           </div>
 
           <div className="mt-4">
-            <p className="t-yellow font-bold">SUPERNOVAS <span className="t-dim font-normal">// Aug 2021 - Aug 2022</span></p>
+            <p className="t-yellow font-bold">SUPERNOVAS <span className="t-dim font-normal">— Aug 2021 - Aug 2022</span></p>
             <div className="mt-1 pl-4 border-l-2 border-[#3c3c3c]">
               <p>First &apos;real job&apos; as a developer. Joined a pre-seed startup</p>
               <p>in the social media / crypto space.</p>
