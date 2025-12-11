@@ -53,13 +53,9 @@ export default function Terminal() {
             <span className="t-blue">TypeScript</span>
             <span className="t-red">Git</span>
             <span className="t-cyan">CoreML</span>
-          </div>
-          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
             <span className="t-blue">Docker</span>
             <span className="t-red">Redis</span>
             <span className="t-cyan">Postgres</span>
-          </div>
-          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
             <span className="t-yellow">AWS</span>
             <span className="t-red">Hetzner</span>
             <span className="t-cyan">DigitalOcean</span>
