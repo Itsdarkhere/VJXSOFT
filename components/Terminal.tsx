@@ -1,6 +1,6 @@
 export default function Terminal() {
   return (
-    <div className="terminal-window w-full max-w-3xl">
+    <div className="terminal-window w-full max-w-2xl">
       <div className="terminal-header">
         <div className="terminal-btn terminal-btn-red"></div>
         <div className="terminal-btn terminal-btn-yellow"></div>
@@ -10,40 +10,18 @@ export default function Terminal() {
 
       <div className="terminal-body">
         <div className="mb-6">
-          <p>
-            <span className="t-green">valtteri@macbook</span>
-            <span className="t-dim">:</span>
-            <span className="t-blue">~</span>
-            <span className="t-dim">$</span> <span className="t-white">cat about.txt</span>
-          </p>
-          <div className="mt-2 pl-0">
-            <p className="t-yellow text-xl font-bold mb-2">Valtteri Juvonen</p>
-            <p>I enjoy creating fast, beautiful interfaces and</p>
-            <p>experiences for humans to enjoy.</p>
-          </div>
+          <p className="t-yellow text-xl font-bold mb-2">Valtteri Juvonen</p>
+          <p>I enjoy creating fast, beautiful interfaces and</p>
+          <p>experiences for humans to enjoy.</p>
         </div>
 
         <div className="mb-6">
-          <p>
-            <span className="t-green">valtteri@macbook</span>
-            <span className="t-dim">:</span>
-            <span className="t-blue">~</span>
-            <span className="t-dim">$</span> <span className="t-white">cat contact.txt</span>
-          </p>
-          <div className="mt-2 flex flex-wrap gap-x-6">
-            <span><span className="t-dim">email:</span> <span className="t-cyan">valtteri@vjxsoft.com</span></span>
-            <span><span className="t-dim">github:</span> <span className="t-cyan">github.com/Itsdarkhere</span></span>
-          </div>
+          <p><span className="t-dim">email:</span> <span className="t-cyan">valtteri@vjxsoft.com</span></p>
+          <p><span className="t-dim">github:</span> <span className="t-cyan">github.com/Itsdarkhere</span></p>
         </div>
 
         <div className="mb-6">
-          <p>
-            <span className="t-green">valtteri@macbook</span>
-            <span className="t-dim">:</span>
-            <span className="t-blue">~</span>
-            <span className="t-dim">$</span> <span className="t-white">ls technologies/</span>
-          </p>
-          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+          <div className="flex flex-wrap gap-x-4 gap-y-1">
             <span className="t-blue">React</span>
             <span className="t-purple">React Native</span>
             <span className="t-orange">Swift</span>
@@ -64,14 +42,7 @@ export default function Terminal() {
         </div>
 
         <div className="mb-6">
-          <p>
-            <span className="t-green">valtteri@macbook</span>
-            <span className="t-dim">:</span>
-            <span className="t-blue">~</span>
-            <span className="t-dim">$</span> <span className="t-white">cat experience.log</span>
-          </p>
-
-          <div className="mt-4">
+          <div className="mt-0">
             <p className="t-yellow font-bold">SPOLINGO <span className="t-dim font-normal">— Nov 2025 - Present</span></p>
             <div className="mt-1 pl-4 border-l-2 border-[#3c3c3c]">
               <p>Building a new app focused on language learning</p>
@@ -114,12 +85,7 @@ export default function Terminal() {
         </div>
 
         <div>
-          <p>
-            <span className="t-green">valtteri@macbook</span>
-            <span className="t-dim">:</span>
-            <span className="t-blue">~</span>
-            <span className="t-dim">$</span> <span className="cursor"></span>
-          </p>
+          <span className="cursor"></span>
         </div>
       </div>
     </div>
