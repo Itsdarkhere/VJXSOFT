@@ -1,7 +1,6 @@
 export default function Terminal() {
   return (
     <div className="terminal-window w-full max-w-3xl">
-      {/* Terminal Header */}
       <div className="terminal-header">
         <div className="terminal-btn terminal-btn-red"></div>
         <div className="terminal-btn terminal-btn-yellow"></div>
@@ -9,9 +8,7 @@ export default function Terminal() {
         <div className="terminal-title">valtteri@macbook — zsh</div>
       </div>
 
-      {/* Terminal Body */}
       <div className="terminal-body">
-        {/* whoami command */}
         <div className="mb-6">
           <p>
             <span className="t-green">valtteri@macbook</span>
@@ -26,7 +23,6 @@ export default function Terminal() {
           </div>
         </div>
 
-        {/* Contact info */}
         <div className="mb-6">
           <p>
             <span className="t-green">valtteri@macbook</span>
@@ -40,7 +36,6 @@ export default function Terminal() {
           </div>
         </div>
 
-        {/* Technologies */}
         <div className="mb-6">
           <p>
             <span className="t-green">valtteri@macbook</span>
@@ -72,7 +67,6 @@ export default function Terminal() {
           </div>
         </div>
 
-        {/* Experience */}
         <div className="mb-6">
           <p>
             <span className="t-green">valtteri@macbook</span>
@@ -123,7 +117,6 @@ export default function Terminal() {
           </div>
         </div>
 
-        {/* Current prompt with cursor */}
         <div>
           <p>
             <span className="t-green">valtteri@macbook</span>
