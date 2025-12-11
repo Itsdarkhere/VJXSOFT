@@ -1,15 +1,30 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
-import CookieModal from "@/components/CookieModal";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "VJXSOFT | hakukoneoptimointia ja verkkosivuja",
-  description: "VJXSOFT tarjoaa kaiken tarpeellisen yrityksesi verkkosivujen ja hakukoneoptimoinnin toteuttamiseen.",
+  title: "Valtteri Juvonen | Developer",
+  description: "I enjoy creating fast, beautiful interfaces and experiences for humans to enjoy. React, Swift, Next.js, Node.js, Python.",
+  keywords: ["developer", "software engineer", "React", "Swift", "iOS", "Next.js", "Node.js", "Python", "Valtteri Juvonen"],
+  authors: [{ name: "Valtteri Juvonen" }],
+  creator: "Valtteri Juvonen",
+  metadataBase: new URL("https://vjxsoft.com"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://vjxsoft.com",
+    title: "Valtteri Juvonen | Developer",
+    description: "I enjoy creating fast, beautiful interfaces and experiences for humans to enjoy.",
+    siteName: "Valtteri Juvonen",
+  },
+  twitter: {
+    card: "summary",
+    title: "Valtteri Juvonen | Developer",
+    description: "I enjoy creating fast, beautiful interfaces and experiences for humans to enjoy.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -18,11 +33,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light">
-      <body className={inter.className}>
-        <Nav />
+    <html lang="en">
+      <body>
         {children}
-        <Footer />
       </body>
     </html>
   );
